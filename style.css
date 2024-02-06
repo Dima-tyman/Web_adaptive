@@ -94,6 +94,10 @@ body {
     grid-column: 1 / -1;
 }
 
+.accesories img:nth-child(2) {
+    display: none;
+}
+
 .offer__item__text {
     position: absolute;
     text-align: center;
@@ -286,5 +290,100 @@ body {
     .offer {
         padding-left: 16px;
         padding-right: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .auto__padding {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header__right a:nth-child(2) {
+        display: none;
+    }
+
+    .header__right a:nth-child(3) {
+        display: none;
+    }
+
+    .home {
+        justify-content: center;
+        height: auto;
+    }
+    
+    .home__image {
+        display: none;
+    }
+
+    .home__text {
+        width: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        padding-left: 12px;
+        padding-right: 0;
+        border-left: #F16D7F 12px solid;
+        font-size: 20px;
+    }
+
+    .home__title {
+        font-size: 38px;
+    }
+    
+    .offer {
+        padding-bottom: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        gap: 32px;
+    }
+
+    .accesories img:nth-child(1) {
+        display: none;
+    }
+
+    .accesories img:nth-child(2) {
+        display: block;
+    }
+
+    .product {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .product__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 16px;
+    }
+
+    .product__item {
+        max-width: 360px;
+    }
+
+    .product__header {
+        padding: 65px 30px;
+        margin-bottom: 0;
+    }
+
+    .product__item__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product__item__content {
+        padding: 20px 16px;
+    }
+
+    .product__footer {
+        margin-top: 40px;
+        margin-bottom: 85px;
     }
 }
